@@ -6,11 +6,8 @@
 set nobackup
 set noswapfile
 
-" 设置文件编码为 UTF-8
+" 文件编码
 set encoding=utf-8
-
-" 粘贴
-set clipboard+=unnamed
 
 " 查找
 set ic
@@ -270,6 +267,7 @@ Plug 'prettier/vim-prettier', {
 
 let g:prettier#config#bracket_spacing = 'true'
 let g:prettier#config#jsx_bracket_same_line = 'false'
+let g:prettier#config#trailing_comma = 'es5'
 let g:prettier#autoformat = 0
 autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql PrettierAsync
 

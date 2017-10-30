@@ -2,19 +2,15 @@
   "name": "to-vim",
   "version": "1.0.0",
   "description": "如何让 vim 成为我们的神器",
-  "main": "README.md",
+  "main": ".vimrc",
   "author": "枫上雾棋",
   "license": "MIT",
-  "lint-staged": {
-    "*.js": [
-      "eslint --fix",
-      "prettier --single-quote --trailing-comma es5 --write ",
-      "git add"
-    ],
-    "*.css": [
-      "stylelint",
-      "git add"
-    ]
+  "scripts": {
+    "lint:css": "stylelint __test__/*.css",
+    "lint:js": "eslint __test__/*.js",
+    "lint": "yarn lint:js && yarn lint:css",
+    "precommit": "lint-staged && yarn lint",
+    "commitmsg": "validate-commit-msg"
   },
   "devDependencies": {
     "eslint": "^4.9.0",

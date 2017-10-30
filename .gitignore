@@ -15,7 +15,6 @@ coverage
 .lock-wscript
 
 # Dependency directory
-# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
 node_modules
 
 # Bower
@@ -29,7 +28,6 @@ dist
 .vscode/
 
 # Emacs
-# tern(JS解析器, emacs里补全用的)
 .tern-port
 .#*
 *#

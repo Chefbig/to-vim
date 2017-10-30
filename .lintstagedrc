@@ -1,0 +1,12 @@
+{
+	"__test__/*.{js,jsx}": [
+		"prettier --write",
+		"eslint --fix",
+		"git add"
+	],
+	"__test__/*.css": [
+		"prettier --write",
+		"stylelint --fix",
+		"git add"
+	]
+}
